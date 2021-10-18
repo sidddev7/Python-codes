@@ -4,20 +4,26 @@
 #1. pyttx3
 #2. PyPDF2
 
+#Importing the Libraries
 import pyttsx3
 import PyPDF2
 
+#opening the book into the file reader
 book=open('your pdf file location','rb')
 
+#using pdf reader
 pdfreader=PyPDF2.PdfFileReader(book)
 
+##reading the pages
 pages=pdfreader.numPages
 #print(pages)
 #select the page number that you want python program to narrate
 page=pdfreader.getPage(30)
 
+#extracting the page contents
 text=page.extractText()
 
+#speaking the extracted text
 speaker=pyttsx3.init()
 
 speaker.say(text)
