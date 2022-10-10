@@ -1,3 +1,3 @@
 # Python-codes
 small python codes for specific functionalities
-like Text to speech,Qr code,Speech to text,
+like Text to speech,Qr code,Speech to text and many more functionalities,
