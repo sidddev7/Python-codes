@@ -1,4 +1,5 @@
 # install the python module pyttsx3
+#make sure you properly install packages
 import pyttsx3
 speaker=pyttsx3.init()
 text=input("Enter the sentence that you want to speak")
